@@ -1,0 +1,85 @@
+.post__mainSection{
+    display: flex;
+    align-items: start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+}
+
+.post__job{
+    display: flex;
+    align-items: center;
+}
+
+.post__seeMore{
+    color: var(--twitter-color);
+}
+
+.post__jobTitle:hover,
+.post__seeMore:hover{
+    text-decoration: underline;
+}
+
+.post__jobTitle{color: gray;}
+
+.post__job > .MuiSvgIcon-root{
+    font-size: 13px !important;
+    margin-left: 65px;
+    margin-right: 10px;
+    color: rgb(33, 33, 33);
+}
+
+.post__jobTitle,
+.post__seeMore{
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.post__job > span{
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.post__headerText > h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.post__headerDescription{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.post__body{
+    flex: 1;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.post__image{
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.post__avatar{
+    padding: 20px;
+    padding-top: 0;
+}
+
+.post__footer{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+
+.post__badge{
+    font-size: 14px !important;
+    color: var(--twitter-color);
+}
+
+.post__headerSpecial{
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+}

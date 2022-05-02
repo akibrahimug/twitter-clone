@@ -1,0 +1,99 @@
+.tweetBox__buttons{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--twitter-background);
+}
+
+
+.tweetBox__input{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+.tweetBox__publicBtn{
+    display: flex ;
+    align-items: center;
+    margin-top: 0;
+    color: var(--twitter-color);
+    font-size: 13px;
+    font-weight: 800;
+    margin-left: 70px;
+    padding: 4px 12px ;
+    max-width: fit-content;
+}
+
+.tweetBox__publicBtn > .MuiSvgIcon-root{
+    font-size: 18px;
+}
+
+.tweetBox__publicBtn:hover,
+.tweetBox__buttons__small > .MuiSvgIcon-root:not(:last-child):hover{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color:var(--twitter-color);
+    transition: color 100ms ease-out;
+    cursor: pointer;
+}
+
+.tweetBox__input > input{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.tweetBox__buttons{
+    display: flex;
+    margin-left: 80px;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.tweetBox__buttons__small > .MuiSvgIcon-root{
+    padding: 5px;
+    color: var(--twitter-color);
+}
+
+.tweetBox__buttons__small > .MuiSvgIcon-root:last-child{
+    color: var(--twitter-background);
+    visibility: hidden;
+}
+
+.tweetBox__buttons__small > .MuiSvgIcon-root:nth-last-child(2){
+    visibility: hidden;
+}
+
+
+
+.tweetBox__tweetButton{
+    width: 100px !important; 
+    background-color: var(--twitter-color) !important;
+    border: none;
+    color: #fff !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 40px !important;
+    margin-right: 10px !important;
+}
+
+.tweetBox__moreTweets{
+    border-top: 1px solid var(--twitter-background);
+    border-bottom: 1px solid var(--twitter-background);
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.tweetBox__moreTweets:hover{
+    background-color: var(--twitter-background);
+}
+
+.tweetBox__moreTweets > h4{
+    font-weight: 500;
+    color: var(--twitter-color);
+}
+
+
