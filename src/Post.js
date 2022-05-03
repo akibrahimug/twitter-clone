@@ -3,34 +3,34 @@ import { Avatar } from '@mui/material'
 import React from 'react'
 import "./Post.css"
 
-export default function Post({displayName, userName, verified, text, image, description}) {
+export default function Post({displayName, userName, verified, text, image, avatar, job}) {
     return (
         <div className="post">
             <div className="post__job">
                 <ChatBubble />
-                <p className="post__jobTitle">Computer Programming</p>
+                <p className="post__jobTitle">{job}</p>
                 <span>.</span>
                 <p className="post__seeMore">See more</p>
             </div>
             <div className="post__mainSection">
             <div className="post__avatar">
-                <Avatar />
+                <Avatar  src={avatar}/>
             </div>
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
-                        <h3>Akibrahim{" "}
+                        <h3>{displayName}{" "}
                         <span className="post__headerSpecial">
-                            <VerifiedUser className="post__badge"/>
-                            @kasoma
+                            {verified && <VerifiedUser className="post__badge"/>}
+                            @{userName}
                         </span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>I challenge you to build a twitter clone</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1651438449770-244318535424?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" className="post__image" alt=""/>
+                <img src={image} className="post__image" alt=""/>
                 <div className="post__footer">
                     <ChatBubbleOutline fontSize="small" />
                     <Repeat fontSize="small" />
